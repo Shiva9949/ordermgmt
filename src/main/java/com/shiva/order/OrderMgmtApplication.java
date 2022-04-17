@@ -1,13 +1,17 @@
 package com.shiva.order;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication
-public class OrdermgmtApplication {
-
+@EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
+public class OrderMgmtApplication {
+	
 	public static void main(String[] args) {
-		SpringApplication.run(OrdermgmtApplication.class, args);
+		SpringApplication.run(OrderMgmtApplication.class, args);
+		System.out.println("Order Mangement Application started successfully.....");
 	}
 
 }
