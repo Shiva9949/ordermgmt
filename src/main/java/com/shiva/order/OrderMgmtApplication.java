@@ -11,7 +11,7 @@ public class OrderMgmtApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(OrderMgmtApplication.class, args);
-		System.out.println("Order Mangement Application started successfully.....");
+		System.out.println("Ord er Mangement Application started successfully.. ...");
 	}
 
 }
